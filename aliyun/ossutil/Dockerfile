@@ -1,6 +1,8 @@
 
 FROM alpine:latest
 
+LABEL MAINTAINER="eirture@gmail.com"
+
 ENV OSSUTIL_VERSION 1.7.0
 
 ADD https://gosspublic.alicdn.com/ossutil/${OSSUTIL_VERSION}/ossutil64 /usr/local/bin/ossutil
