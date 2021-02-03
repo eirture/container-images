@@ -1,2 +1,3 @@
-# images
-Some images of Docker
+# container images
+
+Some images for daily work
