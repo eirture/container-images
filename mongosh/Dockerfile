@@ -1,7 +1,7 @@
 
 FROM ubuntu:20.04
 
-LABEL MAINTAINER='Jie Liu<eirture@gmail.com>'
+LABEL MAINTAINER='Jie Liu <eirture@gmail.com>'
 
 RUN set -ex \
     && apt update \
