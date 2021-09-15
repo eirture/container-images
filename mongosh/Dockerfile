@@ -6,10 +6,10 @@ LABEL MAINTAINER='Jie Liu <eirture@gmail.com>'
 ARG VERSION=1.0.4
 
 RUN set -ex \
-    && apt update \
-    && apt install -y wget \
+    && apt-get update \
+    && apt-get install -y wget \
     && wget -cq -O ./mongosh.deb https://downloads.mongodb.com/compass/mongodb-mongosh_${VERSION}_amd64.deb \
-    && apt install -y ./mongosh.deb \
+    && apt-get install -y ./mongosh.deb \
     && rm mongosh.deb \
     && apt-get clean autoclean \
     && apt-get autoremove -y \
